@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1057502766735",
+    "firebase_url": "https://detectface-df608.firebaseio.com",
+    "project_id": "detectface-df608",
+    "storage_bucket": "detectface-df608.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1057502766735:android:f60c3734d09fbcc1c132fa",
+        "android_client_info": {
+          "package_name": "com.detectface"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1057502766735-uafih3lskebdhdf9eruq3mp8ivs3rba3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEtrdat89pGnwwJ-ceSmx6fIz2-3Z5pqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1057502766735-uafih3lskebdhdf9eruq3mp8ivs3rba3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
