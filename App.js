@@ -14,10 +14,10 @@ export default class App extends Component {
       const options = { quality: 0.5, base64: true,   
         // uncomment this line if you want to stop funct after capture  
         // pauseAfterCapture: true,
-        // orientation : 'portrait',
+        orientation : 'portrait',
         forceUpOrientation: true
                  };
-      // const data = await this.camera.takePictureAsync(options);
+      const data = await this.camera.takePictureAsync(options);
       console.log("data.uri: ",data.uri);
     }
   };
@@ -38,19 +38,18 @@ export default class App extends Component {
         ref={ref => {
           this.camera = ref;
         }}
-
         fixOrientation={true}
         faceDetectionClassifications={RNCamera.Constants.FaceDetection.Classifications.all}
         faceDetectionLandmarks={RNCamera.Constants.FaceDetection.Landmarks.all}
         type={RNCamera.Constants.Type.back}
         
         onFacesDetected={face => {
-          // console.log("onFacesDetected :",face);
+          console.log("onFacesDetected :",face);
           
           if(this.state.fd ){
               this.setState({fd: face.faces.length === 0})
               alert(JSON.stringify(face))
-              // this.takePicture()
+              this.takePicture()
           }
         }}
         />
